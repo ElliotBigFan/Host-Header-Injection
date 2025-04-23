@@ -38,7 +38,7 @@
 <body>
     <div class="container">
         <h1>Reset Password</h1>
-        <p>Nhập địa chỉ email của bạn để nhận link reset mật khẩu.</p>
+        <p>Type your email address to reset your password with a token</p>
         <form action="" method="POST">
             <input type="email" name="email" placeholder="Email" required>
             <button type="submit" class="btn btn-primary">Gửi</button>
