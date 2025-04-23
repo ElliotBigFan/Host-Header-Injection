@@ -41,7 +41,9 @@
         <p>Type your email address to reset your password with a token</p>
         <form action="" method="POST">
             <input type="email" name="email" placeholder="Email" required>
-            <button type="submit" class="btn btn-primary">Gửi</button>
+            <button type="submit" class="btn btn-primary">Send</button>
+            <p>Click here to return your mailhog: <a href='http://localhost:8025'>Inbox</a></p>
+            <p>Click here to see your inbox: <a href='http://localhost:8081'>Inbox</a></p>
         </form>
     </div>
     <?php
@@ -55,7 +57,7 @@
             $email = $_POST['email'];
         }
         else{
-            die("");
+            die('');
         }
         $flag = "FLAG{H0st_H3ad3r_1s_4n_1nJ3ct10n}";
         if($host == "localhost:8082"){
@@ -73,7 +75,7 @@
         $mail->send();
     ?>
     <div class="footer">
-        <p>&copy; 2023 <a href="https://example.com">Your Company</a></p>
+        <p>&copy; 2023 <a href="#">Your Company</a></p>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
